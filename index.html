@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Tip Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-container">
+            <form>
+                <div class="bill-container">
+                    <label for="Bill">Bill</label>
+                    <input type="number" id="Bill" min="0"  required>
+                </div>
+       
+                <div class="people-container">
+                    <label for="person">Number of People</label>
+                    <input type="number" id="person" min="0"  required>
+                </div>
+                <div class="tip-container">
+                    <h1> Select Tip % </h1>
+                    <div class="tips">
+                        <button class="tip-button" value="5%">5%</button>
+                        <button class="tip-button" value="10%">10%</button>
+                        <button class="tip-button" value="15%">15%</button>
+                        <button class="tip-button" value="25%">25%</button>
+                        <button class="tip-button" value="50%">50%</button>
+                        <input class="tip-button" id="custom" type="number" placeholder="Custom">
+              
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="right-container">
+            <div class="total-container">
+                <div class="person-container">
+                    <div class="text-person-container">
+                        <p>Tip Amount</p>
+                        <p id="exc">/ person</p>
+                    </div>
+                    <div class="price-person">
+                        <h2 class="price" id="price-person">$00.00</h2>
+                    </div>
+                </div>
+
+                <div class="total-person">
+                    <div class="total-person-container">
+                        <p>Total Amount</p>
+                        <p id="exc">/ person</p>
+                    </div>
+                    <div class="price-total">
+                        <h2 class="price" id="price-total">$00.00</h2>
+                    </div>
+                   
+
+                </div>
+                <div class="reset-container">
+                    <button type="reset" id="reset-button">Reset</button>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>
